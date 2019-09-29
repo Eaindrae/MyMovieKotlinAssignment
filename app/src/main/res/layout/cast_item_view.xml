@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/iv_cast1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:scaleType="fitXY"
+                android:src="@drawable/natalie"
+        />
+        <TextView
+                android:id="@+id/tv_cast1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/eighty"
+                android:textAlignment="center"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:text="@string/tv_natalie_portman"
+                android:textColor="@color/colorwhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_regular_3x"
+
+        />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

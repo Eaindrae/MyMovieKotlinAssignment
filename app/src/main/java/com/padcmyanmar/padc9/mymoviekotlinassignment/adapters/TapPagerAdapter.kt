@@ -2,30 +2,34 @@ package com.padcmyanmar.padc9.mymoviekotlinassignment.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentStatePagerAdapter
-import com.padcmyanmar.padc9.mymoviekotlinassignment.fragments.FragmentOne
+import androidx.fragment.app.FragmentPagerAdapter
+import com.padcmyanmar.padc9.mymoviekotlinassignment.fragments.CinemaFragment
+import com.padcmyanmar.padc9.mymoviekotlinassignment.fragments.ComingSoonFragment
+import com.padcmyanmar.padc9.mymoviekotlinassignment.fragments.NowShowingFragment
 
-class TapPagerAdapter(fm:FragmentManager):FragmentStatePagerAdapter(fm,Int) {
+
+class TapPagerAdapter(fm:FragmentManager):FragmentPagerAdapter(fm) {
+
+    override fun getItem(position: Int): Fragment {
+        return when (position) {
+            0 -> NowShowingFragment()
+            1 -> CinemaFragment()
+            else -> ComingSoonFragment()
+        }
+    }
+
     override fun getCount(): Int {
         return 3
     }
 
-    override fun getItem(position: Int): Fragment {
-        if (position == 0) {
-            return FragmentOne()
 
-        } else if (position == 1) {
-            return FragmentOne()
+    override fun getPageTitle(position: Int): CharSequence {
+        return when (position){
+            0 -> "Now Showing"
+            1 -> "Cinema"
+            else -> "Coming Soon"
         }
     }
-         override fun getPageTitle(position: Int): CharSequence {
-            return if (position == 0) {
-                "Now Showing"
-            } else if (position == 1) {
-                "Cinema"
-            } else
-                "Coming Soon"
-        }
 
 
 }

@@ -45,4 +45,8 @@
     <dimen name="card_height">280dp</dimen>
     <dimen name="margin_xxxlarge_2x">256dp</dimen>
     <dimen name="corner_material_card">5dp</dimen>
+
+    <dimen name="twohundred">200dp</dimen>
+    <dimen name="thirtyfive">350dp</dimen>
+    <dimen name="eighty">80dp</dimen>
 </resources>

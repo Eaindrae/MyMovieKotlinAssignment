@@ -4,6 +4,7 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".fragments.NowShowingFragment"
             >
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,8 +14,9 @@
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
         <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/rvMovies">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:id="@+id/rv_now_showing">
 
         </androidx.recyclerview.widget.RecyclerView>
     </RelativeLayout>

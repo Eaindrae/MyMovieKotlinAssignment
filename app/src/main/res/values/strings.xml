@@ -6,5 +6,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tv_black_panther">Black Panther</string>
-    <string name="tv_description">Lena, a biologist and former soldier, joins a mission to uncover what happened to her husband inside Area X -- a sinister and mysterious phenomenon that is expanding across the American coastline. Once inside, the expedition discovers a world of mutated landscapes and creatures, as dangerous as it is beautiful, that threatens both their lives and their sanity.</string>
+    <string name="tv_description">Lena, a biologist and former soldier, joins a mission to uncover what happened to her
+        husband inside Area X -- a sinister and mysterious phenomenon that is expanding across the American coastline.
+        Once inside, the expedition discovers a world of mutated landscapes and creatures, as dangerous as it is
+        beautiful, that threatens both their lives and their sanity.
+    </string>
+    <string name="tv_natalie_portman">Natalie\n Portman</string>
+    <string name="tv_screenshots">ScreenShots</string>
 </resources>

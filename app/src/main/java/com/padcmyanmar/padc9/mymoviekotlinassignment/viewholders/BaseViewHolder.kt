@@ -8,8 +8,9 @@ abstract class BaseViewHolder<T>(itemView: View):RecyclerView.ViewHolder(itemVie
     var data:T ?=null
     set(value) {
         field = value
-        if(value!= null){
-bindData(value)
+
+        value?.let {
+            bindData(value)
         }
     }
 protected  abstract fun bindData(data:T)

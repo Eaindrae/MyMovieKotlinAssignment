@@ -1,22 +1,36 @@
 package com.padcmyanmar.padc9.mymoviekotlinassignment.activities
 
+
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity;
-import android.view.Menu
-import android.view.MenuItem
+
 import com.padcmyanmar.padc9.mymoviekotlinassignment.R
+import com.padcmyanmar.padc9.mymoviekotlinassignment.adapters.TapPagerAdapter
+
+import com.padcmyanmar.padc9.mymoviekotlinassignment.delegate.MovieItemDelegate
 
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity(){
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+
+
+        val tabPagerAdapter = TapPagerAdapter(supportFragmentManager)
+        viewpager.adapter = tabPagerAdapter
+        tablayout.setupWithViewPager(viewpager)
+
+        //val eventId = intent.getIntExtra(EXTRA_MOVIE_ID, 0)
+
 
     }
+    //,MovieItemDelegate
+//    override fun onTapMovieItem(eventId: Int) {
+//      startActivity(MovieDetailListActivity.newIntent(applicationContext, eventId))
+//    }
 
 
 }
