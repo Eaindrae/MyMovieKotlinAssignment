@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient">
+
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_2"/>
+        <ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bgndblur"/>
+        <TextView
+
+                android:id="@+id/tv_movie_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Annihilation"
+                android:textSize="@dimen/text_big"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/colorwhite"/>
+        <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_below="@+id/tv_movie_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_large"
+                android:gravity="center">
+            <TextView
+
+                    android:id="@+id/tv_movie__genre_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fantasy/Science Fiction ."
+                    android:textSize="@dimen/text_regular"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/colorwhite"/>
+            <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_toEndOf="@id/tv_movie__genre_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2h 15 m"
+                    android:textSize="@dimen/text_regular"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/colorwhite"/>
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_below="@id/relative1"
+                android:id="@+id/linear1"
+                android:weightSum="6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+            <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_imdb_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7.5"
+                        android:textColor="@color/colorwhite"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_regular"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:layout_below="@id/tv_imdb_num"
+                        android:id="@+id/tv_imdb_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="imdb"
+                        android:textColor="@color/color_grey"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_regular"
+                />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_rotten_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="97%"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/text_regular"/>
+                <TextView
+                        android:layout_below="@id/tv_rotten_num"
+                        android:id="@+id/tv_rotten_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rotten Tomato"
+                        android:textColor="@color/color_grey"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_regular"
+                />
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom">
+                <TextView
+                        android:id="@+id/tv_meta_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="92%"
+                        android:textColor="@color/colorwhite"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_regular"/>
+                <TextView
+                        android:layout_below="@id/tv_meta_num"
+                        android:id="@+id/tv_meta_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="metacritic"
+                        android:textColor="@color/color_grey"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_regular"
+                />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_below="@id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+            <ImageView
+
+
+                    android:id="@+id/iv_background1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"/>
+
+            <ImageButton
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_play_circle_outline_black_24dp"
+                    android:layout_gravity="center"
+
+            />
+
+        </FrameLayout>
+        <TextView
+                android:layout_below="@id/framelayout"
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_description"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:textColor="@color/colorwhite"/>
+        <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_below="@id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <TextView
+
+                    android:id="@+id/tv_read_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read More"
+
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:textSize="@dimen/text_regular_2x"
+                    android:textColor="@color/colorwhite"/>
+            <ImageView
+
+                    android:layout_toEndOf="@id/tv_read_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+            <Button
+                    android:layout_below="@id/tv_read_more"
+                    android:id="@+id/btn_buy_ticket"
+                    android:textAlignment="center"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="Buy Tickets"
+                    android:textAllCaps="false"
+                    android:padding="@dimen/margin_small"
+                    android:background="@drawable/round_button"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/text_heading_1x"
+                    android:layout_gravity="center"
+
+            />
+        </RelativeLayout>
+        <TextView
+                android:layout_below="@id/relative2"
+                android:id="@+id/tv_cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cast"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_regular_3x"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin_medium"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/tv_cast"
+                android:id="@+id/rv_cast"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        <TextView
+                android:layout_below="@id/rv_cast"
+                android:id="@+id/tv_screenshots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/tv_screenshots"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/text_regular_3x"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/tv_screenshots"
+                android:id="@+id/rv_screenshots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+        />
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
